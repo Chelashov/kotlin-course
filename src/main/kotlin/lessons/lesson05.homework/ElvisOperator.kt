@@ -1,0 +1,25 @@
+package org.example.lessons.lesson05.homework
+
+fun main() {
+
+    // example 1
+    val baseIntensity: Double = 3.0
+    val coefficient: Double? = 0.73 // но может быть null
+    val baseCoefficient = 0.5
+    val finalCoefficient = coefficient ?: baseCoefficient
+    val resultIntensity = baseIntensity * finalCoefficient
+
+    // example 2
+    val defaultCost: Double = 50.0
+    val cost: Double? = 20.0 // но может быть null
+    val deliveryCost = 5.0
+    val insuranceCoefficient = 0.005
+    // стоимость страховки
+    val insuranceCost = (cost ?: defaultCost) * insuranceCoefficient
+    val totalCost: Double = deliveryCost + insuranceCost
+
+    // example 3
+    val pressure: String? = "34.6" // но может быть null
+    val attentionMessage = "Attention, pressure is lost"
+    val pressureForLab: String = pressure ?: attentionMessage
+}
