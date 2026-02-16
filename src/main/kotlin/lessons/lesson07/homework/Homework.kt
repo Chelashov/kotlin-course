@@ -1,6 +1,6 @@
 package org.example.lessons.lesson07.homework
 
- u
+ uu
 fun main() {
 
     for (i in 1..5) {
