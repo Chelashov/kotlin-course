@@ -28,8 +28,8 @@ fun f8(g: Int): String? {
     return null
 }
 
-fun f9(): List<String>? {
-    return null
+fun f9(): List<String?> {
+    return listOf("Kotlin", "Java")
 }
 
 fun f10(g: String?, h: Int?): Boolean? {
@@ -41,9 +41,7 @@ fun multiplyByTwo(j: Int): Int {
 }
 
 fun isEven(i: Int): Boolean {
-    if (i % 2 == 0)
-        return true
-    else return false
+    return (i % 2 == 0)
 }
 
 fun printNumbersUntil(n: Int) {
@@ -68,7 +66,7 @@ fun processList(l1: List<String?>) {
     for (i in l1) {
         if (i == null)
             return
-        else println(i)
+        println(i)
     }
 }
 
