@@ -34,7 +34,7 @@ val t15 = numbers.map { it.toString().length }
 val t16 = numbers.associate { it.toString().reversed() to it.toString().length }
 val t17 = numbers.sorted()
 val t18 = numbers.take(3)
-val t19 = numbers.forEach { println(it) }
+val t19 = numbers.forEach { println(it*it) }
 val t20 = numbers.groupBy { it.toString().substring(0, 1) }
 val t21 = numbers.distinct()
 val t22 = numbers.sortedDescending()
@@ -162,10 +162,10 @@ fun f28(numbers28: List<Int>): Map<String, List<Int>> {
 }
 
 val ages = listOf(22, 18, 30, 45, 17, null, 60)
-val age = 18
+val age = 180
 
 fun f29(ages: List<Int?>, age: Int): Int? {
-    val result29 = ages.firstOrNull { it!! > age }
+    val result29 = ages.filterNotNull().firstOrNull { it > age }
     println(result29)
     return result29
 }
