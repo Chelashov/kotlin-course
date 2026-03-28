@@ -4,13 +4,15 @@ class Automat(val color: String, val model: String) {
 
     private var isOn = false
     private var OSisIn = false
-    private var istalledGames = mutableListOf<String>()
-    private var hasJoystick = false
+    private val istalledGames = mutableListOf<String>()
+    val hasJoystick = true
     private var balance = 0.0
     var owner = ""
     var supportNumber = ""
+        private set
     private var seanseIsPayd = false
     var price = 0.0
+        private set
     private var PIN = ""
 
     fun turnOn() {
