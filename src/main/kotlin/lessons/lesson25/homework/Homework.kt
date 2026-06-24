@@ -14,9 +14,9 @@ fun ex3(person: Person) {
     }
 }
 
-fun Person?.toEmployee(): Employee? {
+fun Person?.toEmployee(position: String): Employee? {
     return this?.let {
-        Employee(name, age, position = "")
+        Employee(name, age, position)
     }
 }
 
