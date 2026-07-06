@@ -107,7 +107,7 @@ fun f10(arg: Any?) {
 fun main() {
     f10(1)
 
-//    throw MyException("Моё исключение - моя прелесть")
+    throw MyException("Моё исключение - моя прелесть")
 
     try {
         IOBE()

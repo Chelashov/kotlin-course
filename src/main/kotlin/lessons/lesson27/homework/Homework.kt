@@ -5,6 +5,8 @@ fun main() {
     RealtyTypes.FLAT.printNames()
     bestPlanet { it.distanceToSun > 3 }
     bestPlanet { it.weight > 5 }
+
+
 }
 
 fun testResult(ex: () -> Unit): TestStatuses {
