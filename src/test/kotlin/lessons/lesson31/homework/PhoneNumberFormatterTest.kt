@@ -37,14 +37,14 @@ class PhoneNumberFormatterTest {
 
     companion object {
         @JvmStatic
-        fun provideValidNumbers() = listOf(
+        fun provideValidNumbers() = listOf<Array<Any>>(
             arrayOf("79885840306", "+7 (988) 584-03-06"),
             arrayOf("89885840306", "+7 (988) 584-03-06"),
             arrayOf("9885840306", "+7 (988) 584-03-06")
         )
 
         @JvmStatic
-        fun provideNumbersWithSymbols() = listOf(
+        fun provideNumbersWithSymbols() = listOf<Array<Any>>(
             arrayOf("+7(988)584-03-06", "+7 (988) 584-03-06"),
             arrayOf("abc9885840306", "+7 (988) 584-03-06"),
             arrayOf("988аоао!584))03--06??*", "+7 (988) 584-03-06")

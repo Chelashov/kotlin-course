@@ -15,7 +15,7 @@ class PhoneNumberFormatter {
         }
 
         val digits = if (rawString.length == 11 && rawString.startsWith("7") || rawString.startsWith("8")) {
-            rawString.substring(1)
+            rawString.drop(1)
         } else rawString
 
 
